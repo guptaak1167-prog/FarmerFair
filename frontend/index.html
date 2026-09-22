@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KisaanFair · किसानफेयर</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">🌾</span>
+      <div>
+        <h1 data-i18n="appName">KisaanFair</h1>
+        <p class="tagline" data-i18n="tagline">Fair prices for every farmer</p>
+      </div>
+    </div>
+    <div class="lang">
+      <select id="langSelect" aria-label="Language">
+        <option value="hi">हिन्दी</option>
+        <option value="en">English</option>
+      </select>
+    </div>
+  </header>
+
+  <nav class="tabs">
+    <button class="tab active" data-tab="prices" data-i18n="nav_prices">Prices</button>
+    <button class="tab" data-tab="quality" data-i18n="nav_quality">Check Quality</button>
+    <button class="tab" data-tab="advice" data-i18n="nav_advice">When to Sell</button>
+    <button class="tab" data-tab="account" data-i18n="nav_account">Account</button>
+  </nav>
+
+  <main>
+    <!-- PRICES -->
+    <section id="tab-prices" class="panel active">
+      <h2 data-i18n="prices_title"></h2>
+      <p class="muted" data-i18n="prices_sub"></p>
+      <div class="row">
+        <input id="priceSearch" type="search" data-i18n-ph="search_ph" />
+        <select id="priceCategory">
+          <option value="" data-i18n="all_categories"></option>
+          <option value="cereal" data-i18n="cat_cereal"></option>
+          <option value="pulse" data-i18n="cat_pulse"></option>
+          <option value="oilseed" data-i18n="cat_oilseed"></option>
+          <option value="cash" data-i18n="cat_cash"></option>
+        </select>
+      </div>
+      <div id="priceList" class="cards"></div>
+    </section>
+
+    <!-- QUALITY -->
+    <section id="tab-quality" class="panel">
+      <h2 data-i18n="quality_title"></h2>
+      <p class="muted" data-i18n="quality_sub"></p>
+      <form id="qualityForm" class="form">
+        <label data-i18n="select_crop"></label>
+        <select id="qualityCrop" required></select>
+        <label data-i18n="choose_image"></label>
+        <input id="qualityImage" type="file" accept="image/*" required />
+        <img id="qualityPreview" class="preview hidden" alt="" />
+        <button type="submit" class="btn primary"><span data-i18n="analyze_btn"></span></button>
+      </form>
+      <div id="qualityResult" class="result hidden"></div>
+    </section>
+
+    <!-- ADVICE -->
+    <section id="tab-advice" class="panel">
+      <h2 data-i18n="advice_title"></h2>
+      <p class="muted" data-i18n="advice_sub"></p>
+      <div class="row">
+        <select id="adviceCrop"></select>
+        <button id="adviceBtn" class="btn primary" data-i18n="get_advice"></button>
+      </div>
+      <div id="adviceResult" class="result hidden"></div>
+    </section>
+
+    <!-- ACCOUNT -->
+    <section id="tab-account" class="panel">
+      <h2 data-i18n="account_title"></h2>
+      <p class="muted" data-i18n="account_note"></p>
+
+      <div id="loggedOut">
+        <form id="authForm" class="form">
+          <div id="nameField">
+            <label data-i18n="name"></label>
+            <input id="authName" type="text" />
+          </div>
+          <label data-i18n="phone"></label>
+          <input id="authPhone" type="tel" required />
+          <label data-i18n="password"></label>
+          <input id="authPassword" type="password" required />
+          <div id="stateField">
+            <label data-i18n="state_opt"></label>
+            <input id="authState" type="text" />
+          </div>
+          <button type="submit" class="btn primary" id="authSubmit"></button>
+          <button type="button" class="link" id="authToggle"></button>
+        </form>
+      </div>
+
+      <div id="loggedIn" class="hidden">
+        <p><span data-i18n="welcome"></span>, <strong id="userName"></strong> 👋</p>
+        <button class="btn" id="logoutBtn" data-i18n="logout"></button>
+        <h3 data-i18n="history_title"></h3>
+        <div id="historyList" class="cards"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="muted small" data-i18n="disclaimer"></p>
+  </footer>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

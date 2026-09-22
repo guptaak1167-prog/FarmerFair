@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "source": "Reference / sample figures based on Government of India MSP announcements. Replace with a live feed (see README) for production accuracy.",
+    "currency": "INR",
+    "unit": "per quintal (100 kg)",
+    "season": "2024-25 (reference)"
+  },
+  "crops": [
+    { "id": "paddy",      "name_en": "Paddy (Common)", "name_hi": "धान (सामान्य)",      "msp": 2300, "category": "cereal" },
+    { "id": "paddy_a",    "name_en": "Paddy (Grade A)","name_hi": "धान (ग्रेड ए)",      "msp": 2320, "category": "cereal" },
+    { "id": "wheat",      "name_en": "Wheat",          "name_hi": "गेहूँ",             "msp": 2425, "category": "cereal" },
+    { "id": "jowar",      "name_en": "Jowar (Hybrid)", "name_hi": "ज्वार (हाइब्रिड)",   "msp": 3371, "category": "cereal" },
+    { "id": "bajra",      "name_en": "Bajra",          "name_hi": "बाजरा",             "msp": 2625, "category": "cereal" },
+    { "id": "maize",      "name_en": "Maize",          "name_hi": "मक्का",             "msp": 2225, "category": "cereal" },
+    { "id": "ragi",       "name_en": "Ragi",           "name_hi": "रागी",              "msp": 4290, "category": "cereal" },
+    { "id": "barley",     "name_en": "Barley",         "name_hi": "जौ",                "msp": 1980, "category": "cereal" },
+    { "id": "arhar",      "name_en": "Arhar (Tur)",    "name_hi": "अरहर (तुअर)",       "msp": 7550, "category": "pulse" },
+    { "id": "moong",      "name_en": "Moong",          "name_hi": "मूँग",              "msp": 8682, "category": "pulse" },
+    { "id": "urad",       "name_en": "Urad",           "name_hi": "उड़द",              "msp": 7400, "category": "pulse" },
+    { "id": "gram",       "name_en": "Gram (Chana)",   "name_hi": "चना",               "msp": 5650, "category": "pulse" },
+    { "id": "masoor",     "name_en": "Lentil (Masoor)","name_hi": "मसूर",              "msp": 6700, "category": "pulse" },
+    { "id": "groundnut",  "name_en": "Groundnut",      "name_hi": "मूँगफली",           "msp": 6783, "category": "oilseed" },
+    { "id": "soybean",    "name_en": "Soybean",        "name_hi": "सोयाबीन",           "msp": 4892, "category": "oilseed" },
+    { "id": "mustard",    "name_en": "Mustard",        "name_hi": "सरसों",             "msp": 5950, "category": "oilseed" },
+    { "id": "sunflower",  "name_en": "Sunflower Seed", "name_hi": "सूरजमुखी बीज",       "msp": 7280, "category": "oilseed" },
+    { "id": "cotton",     "name_en": "Cotton (Medium)","name_hi": "कपास (मध्यम)",      "msp": 7121, "category": "cash" },
+    { "id": "sugarcane",  "name_en": "Sugarcane (FRP)","name_hi": "गन्ना (एफआरपी)",    "msp": 340,  "category": "cash" }
+  ]
+}

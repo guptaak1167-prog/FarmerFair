@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "note": "Reference seasonality windows (Indian marketing calendar). Best-sell months are indicative periods when market arrivals are lower and prices tend to firm up. Replace with live mandi-arrival analytics for production."
+  },
+  "seasonality": {
+    "paddy":     { "harvest_months": [10, 11],    "best_sell_months": [3, 4, 5],   "storable_months": 12, "perishable": false },
+    "paddy_a":   { "harvest_months": [10, 11],    "best_sell_months": [3, 4, 5],   "storable_months": 12, "perishable": false },
+    "wheat":     { "harvest_months": [3, 4],      "best_sell_months": [8, 9, 10],  "storable_months": 12, "perishable": false },
+    "jowar":     { "harvest_months": [10, 11],    "best_sell_months": [2, 3, 4],   "storable_months": 10, "perishable": false },
+    "bajra":     { "harvest_months": [9, 10],     "best_sell_months": [1, 2, 3],   "storable_months": 8,  "perishable": false },
+    "maize":     { "harvest_months": [9, 10],     "best_sell_months": [1, 2, 3],   "storable_months": 8,  "perishable": false },
+    "ragi":      { "harvest_months": [11, 12],    "best_sell_months": [4, 5, 6],   "storable_months": 12, "perishable": false },
+    "barley":    { "harvest_months": [3, 4],      "best_sell_months": [8, 9],      "storable_months": 10, "perishable": false },
+    "arhar":     { "harvest_months": [12, 1],     "best_sell_months": [5, 6, 7],   "storable_months": 12, "perishable": false },
+    "moong":     { "harvest_months": [6, 10],     "best_sell_months": [1, 2, 3],   "storable_months": 10, "perishable": false },
+    "urad":      { "harvest_months": [10, 11],    "best_sell_months": [3, 4, 5],   "storable_months": 10, "perishable": false },
+    "gram":      { "harvest_months": [2, 3],      "best_sell_months": [7, 8, 9],   "storable_months": 12, "perishable": false },
+    "masoor":    { "harvest_months": [3, 4],      "best_sell_months": [8, 9, 10],  "storable_months": 12, "perishable": false },
+    "groundnut": { "harvest_months": [10, 11],    "best_sell_months": [3, 4, 5],   "storable_months": 8,  "perishable": false },
+    "soybean":   { "harvest_months": [10, 11],    "best_sell_months": [2, 3, 4],   "storable_months": 8,  "perishable": false },
+    "mustard":   { "harvest_months": [2, 3],      "best_sell_months": [7, 8, 9],   "storable_months": 10, "perishable": false },
+    "sunflower": { "harvest_months": [2, 3, 9],   "best_sell_months": [6, 7],      "storable_months": 6,  "perishable": false },
+    "cotton":    { "harvest_months": [10, 11, 12],"best_sell_months": [4, 5, 6],   "storable_months": 12, "perishable": false },
+    "sugarcane": { "harvest_months": [11, 12, 1], "best_sell_months": [11, 12, 1], "storable_months": 0,  "perishable": true }
+  }
+}
