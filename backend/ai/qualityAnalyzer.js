@@ -1,16 +1,3 @@
-// Crop-quality analyzer.
-//
-// This is the AI layer. It exposes ONE function, analyzeQuality(), so you can
-// swap the internal implementation for a real model without touching routes.
-//
-// CURRENT IMPLEMENTATION (runs offline, no keys):
-//   A deterministic heuristic derives a stable quality score from the image
-//   bytes + resolution hint. The same photo always yields the same grade.
-//
-// TO PLUG IN REAL AI:
-//   Set VISION_API_URL (+ VISION_API_KEY) and implement callVisionApi() below,
-//   e.g. Google Cloud Vision, a custom TensorFlow/PyTorch model served over HTTP,
-//   or an image-classification endpoint fine-tuned on graded crop images.
 import { createHash } from "node:crypto";
 
 // Grade -> price multiplier applied to the government reference price (MSP).
